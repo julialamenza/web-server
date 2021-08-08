@@ -54,9 +54,6 @@ resource "aws_instance" "web" {
   # this should be on port 80
   provisioner "remote-exec" {
     inline = [
-      " sudo apt-get -y update",
-      " sudo apt-get install git",
-      "cd /home/ubuntu",
       "git clone https://github.com/julialamenza/todo-app.git",
       "cd /home/ubuntu/todo-app",
       "git pull",
