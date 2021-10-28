@@ -1,6 +1,6 @@
 A simple web server terraform module for enabling blue-green deployments in AWS using terraform.
 
-##### Usage
+#### Usage
 ```
 module "web_server_a" {
   source = "git@github.com:julialamenza/web-server"
